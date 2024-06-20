@@ -1,20 +1,15 @@
 
 import { useState } from "react";
 
-import 'aos/dist/aos.css';
 
 export function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const [message] = useState<string | null>(null);
-
-
  
-  
 
   return (
-    <div data-aos="zoom-in-left" data-aos-duration="1000">
       <div className="font-[sans-serif] text-[#333]">
         <div className="min-h-screen flex flex-col items-center justify-center">
           <div className="grid md:grid-cols-2 items-center gap-4 max-w-6xl w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
@@ -150,6 +145,6 @@ export function Login() {
         </div>
       </div>
     </div>
-    </div>
+
   );
 }
