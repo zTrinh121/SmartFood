@@ -1,9 +1,6 @@
 
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export function Login() {
@@ -11,10 +8,7 @@ export function Login() {
   const [password, setPassword] = useState("");
 
   const [message, setMessage] = useState<string | null>(null);
-  const navigate = useNavigate();
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
 
  
   
