@@ -1,5 +1,3 @@
-// routes.js or Routes.jsx
-
 import { Routes as RouterRoutes, Route } from 'react-router-dom';
 import { Home, CookingYourself, DinningOut, Login } from './pages';
 
