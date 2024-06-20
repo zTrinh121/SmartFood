@@ -1,29 +1,17 @@
+// routes.js or Routes.jsx
 
-import { useRoutes } from 'react-router-dom'
-import {Home} from './pages/Home'
-import { CookingYourself, DinningOut, Login } from './pages'
+import { Routes as RouterRoutes, Route } from 'react-router-dom';
+import { Home, CookingYourself, DinningOut, Login } from './pages';
 
 const Routes = () => {
-  const routes = useRoutes([
-    {
-      path: '/',
-      element: <Home />,
-    },
-    {
-        path: '/cooking',
-        element: <CookingYourself />,
-      },
-      {
-        path: '/dining',
-        element: <DinningOut />,
-      },
-      {
-        path: '/login',
-        element: <Login />,
-      },
-  ])
+  return (
+    <RouterRoutes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cooking" element={<CookingYourself />} />
+      <Route path="/dining" element={<DinningOut />} />
+      <Route path="/login" element={<Login />} />
+    </RouterRoutes>
+  );
+};
 
-  return routes
-}
-
-export default Routes
+export default Routes;
